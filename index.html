@@ -52,94 +52,105 @@
 
 		<section class="section">
 			<div class="columns">
-				<div class="column box is-offset-1 is-3">
-					<h2 class="title">Balance</h2>
-					<div class="columns">
-						<div class="column is-size-5">Ganancias</div>
-						<div class="column has-text-right has-text-success">+$0</div>
-					</div>
-					<div class="columns">
-						<div class="column is-size-5">Gastos</div>
-						<div class="column has-text-right has-text-danger has-text-success">
-							-$0
+				<div class="column is-offset-1 is-3">
+					<article class="box">
+						<h2 class="title">Balance</h2>
+						<div class="columns">
+							<div class="column is-size-5">Ganancias</div>
+							<div class="column has-text-right has-text-success">+$0</div>
 						</div>
-					</div>
-					<div class="columns">
-						<div class="column is-size-4">Total</div>
-						<div class="column has-text-right has-text-weight-bold">$0</div>
+						<div class="columns">
+							<div class="column is-size-5">Gastos</div>
+							<div
+								class="column has-text-right has-text-danger has-text-success"
+							>
+								-$0
+							</div>
+						</div>
+						<div class="columns">
+							<div class="column is-size-4">Total</div>
+							<div class="column has-text-right has-text-weight-bold">$0</div>
+						</div>
+					</article>
+
+					<article class="box">
+						<h3 class="title is-size-4 has-text-weight-bold">Filtros</h3>
+						<div class="columns">
+							<div class="column has-text-right">
+								<button class="button">Ocultar filtros</button>
+							</div>
+						</div>
+						<form>
+							<div class="field">
+								<label for="" class="label">Tipo</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option value="">Todos</option>
+											<option>Ganancia</option>
+											<option>Gasto</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<label for="" class="label">Categoría</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option value="todas">Todas</option>
+											<option value="comida">Comida</option>
+											<option value="servicios">Servicios</option>
+											<option value="salidas">Salidas</option>
+											<option value="educacion">Educación</option>
+											<option value="transporte">Transporte</option>
+											<option value="trabajo">Trabajo</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label" for="date">Desde</label>
+								<div class="control">
+									<input class="input" id="date" type="date" />
+								</div>
+							</div>
+
+							<div class="field">
+								<label for="" class="label">Ordenar por</label>
+								<div class="control">
+									<div class="select is-fullwidth">
+										<select>
+											<option value="mas reciente">Más reciente</option>
+											<option value="menos reciente ">Menos reciente</option>
+											<option value="mayor monto ">Mayor monto</option>
+											<option value="menor monto ">Menor monto</option>
+											<option value="az">A/Z</option>
+											<option value="za">Z/A</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</form>
+					</article>
+				</div>
+
+				<div class="column is-7">
+					<!-- <h1 class="title is-1">Titulo h1</h1> -->
+					<div class="box">
+						<div class="columns">
+							<div class="column is-offset-3 is-6">
+								<div class="image">
+									<img src="https://placekitten.com/360" alt="" />
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section class="section">
-			<div class="columns">
-				<div class="column box is-offset-1 is-3">
-					<div class="column">
-						<h3 class="is-size-4 has-text-weight-bold">Filtros</h3>
-					</div>
-					<div class="column has-text-right">
-						<a href="#">Ocultar filtros</a>
-					</div>
-
-					<form>
-						<div class="field">
-							<label for="" class="label">Tipo</label>
-							<div class="control">
-								<div class="select is-fullwidth">
-									<select>
-										<option value="">Todos</option>
-										<option>Ganancia</option>
-										<option>Gasto</option>
-									</select>
-								</div>
-							</div>
-						</div>
-
-						<div class="field">
-							<label for="" class="label">Categoría</label>
-							<div class="control">
-								<div class="select is-fullwidth">
-									<select>
-										<option value="todas">Todas</option>
-										<option value="comida">Comida</option>
-										<option value="servicios">Servicios</option>
-										<option value="salidas">Salidas</option>
-										<option value="educacion">Educación</option>
-										<option value="transporte">Transporte</option>
-										<option value="trabajo">Trabajo</option>
-									</select>
-								</div>
-							</div>
-						</div>
-
-						<div class="field">
-							<label class="label" for="date">Desde</label>
-							<div class="control">
-								<input class="input" id="date" type="date" />
-							</div>
-						</div>
-
-						<div class="field">
-							<label for="" class="label">Ordenar por</label>
-							<div class="control">
-								<div class="select is-fullwidth">
-									<select>
-										<option value="mas reciente">Más reciente</option>
-										<option value="menos reciente ">Menos reciente</option>
-										<option value="mayor monto ">Mayor monto</option>
-										<option value="menor monto ">Menor monto</option>
-										<option value="az">A/Z</option>
-										<option value="za">Z/A</option>
-									</select>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-
 		<script src="index.js"></script>
 	</body>
 </html>
