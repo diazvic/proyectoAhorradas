@@ -15,6 +15,7 @@
 			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<!-- barra de navegación -->
@@ -39,7 +40,7 @@
 						<i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
 						Balance
 					</a>
-					<a class="navbar-item">
+					<a class="navbar-item" id="categorias">
 						<i class="fas fa-tag mr-2" aria-hidden="true"></i>
 						Categorías
 					</a>
@@ -181,7 +182,7 @@
 
 		<!-- seccion categorias -->
 
-		<section class="section">
+		<section class="section categoria-oculta" id="seccion-oculta-categorias">
 			<div class="columns">
 				<div class="column is-offset-2 is-7">
 					<div class="box">
